@@ -1,6 +1,6 @@
 
 let count = 0;
-
+const myobj = document.getElementById("btn-decrese");
 const value = document.querySelector("#value");
 const btns = document.querySelectorAll(".btn");
 
@@ -14,7 +14,9 @@ btns.forEach(function (btn) {
     } else {
       count = 0;
     }
-
+    if (count < 0) {
+      decrease.disabled = true;
+    }
     if (count > 0) {
       value.style.color = "green";
     }
