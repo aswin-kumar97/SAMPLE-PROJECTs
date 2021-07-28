@@ -20,7 +20,7 @@ function changeColor() {
   var patt = new RegExp("#");
   var res = patt.test(color);
   if (res) {
-    alert ('not allowed hex colors here ');
+    alert ('not allowed hex colors here!');
   } else {
     document.body.style.backgroundColor = color;
   }
