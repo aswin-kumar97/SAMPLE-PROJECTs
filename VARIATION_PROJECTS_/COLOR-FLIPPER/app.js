@@ -17,6 +17,12 @@
 const colortext = document.getElementById('colorText')
 function changeColor() {
   let color = colortext.value;
-  document.body.style.backgroundColor = color;
-  
+  var patt = new RegExp("#");
+  var res = patt.test(color);
+  if (res) {
+    alert ('ddd');
+  } else {
+    document.body.style.backgroundColor = color;
+  }
 }
+
