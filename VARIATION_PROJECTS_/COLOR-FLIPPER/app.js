@@ -14,8 +14,9 @@
 //     return Math.floor(Math.random() * colors.length);
 // }
 
-
+const colortext = document.getElementById('colorText')
 function changeColor() {
-  let color = document.getElementById('colorText').value;
+  let color = colortext.value;
   document.body.style.backgroundColor = color;
+  
 }

@@ -1,8 +1,8 @@
 
 let count = 0;
-const myobj = document.getElementById("btn-decrese");
 const value = document.querySelector("#value");
 const btns = document.querySelectorAll(".btn");
+
 
 btns.forEach(function (btn) {
   btn.addEventListener("click", function (e) {
@@ -20,12 +20,21 @@ btns.forEach(function (btn) {
     if (count > 0) {
       value.style.color = "green";
     }
-    if (count < 0) {
-      value.style.color = "red";
-    }
     if (count === 0) {
       value.style.color = "#222";
+
     }
     value.textContent = count;
   });
 });
+
+function increaseBtn() {
+  var decr = document.querySelector(".decrease");
+  var ddt = document.querySelector(".reset");
+  decr.classList.remove("disabled");
+  ddt.classList.remove("disabled");
+};
+
+
+
+

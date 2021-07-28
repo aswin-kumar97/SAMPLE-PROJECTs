@@ -188,3 +188,7 @@ main {
   color: var(--clr-white);
   background: var(--clr-black);
 }
+
+.disabled{
+  display: none;
+}
