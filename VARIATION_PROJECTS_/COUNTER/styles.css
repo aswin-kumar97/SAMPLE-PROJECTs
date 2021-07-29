@@ -190,5 +190,10 @@ main {
 }
 
 .disabled{
-  display: none;
+  color: #808080;
+  border-color: #808080;
+}
+.disabled:hover {
+  color: #808080;
+  background: none;
 }
