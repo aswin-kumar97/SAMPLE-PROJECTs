@@ -18,7 +18,6 @@ btns.forEach(function (btn) {
     }
     if (count < 0) {
       decrease.disabled = true;
-
     }
     if (count > 0) {
       value.style.color = "green";
